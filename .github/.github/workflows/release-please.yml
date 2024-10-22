@@ -11,7 +11,45 @@ name: release-please
 jobs:
   release-please:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        module-dir: [
+          "gcp/address",
+          "gcp/api_key",
+          "gcp/artifact_registry",
+          "gcp/bigquery",
+          "gcp/cloud_armor",
+          "gcp/cloud_build",
+          "gcp/composer",
+          "gcp/dns",
+          "gcp/eventarc",
+          "gcp/factory",
+          "gcp/folder",
+          "gcp/functions",
+          "gcp/gcs",
+          "gcp/gke",
+          "gcp/kms",
+          "gcp/lb_http",
+          "gcp/nat",
+          "gcp/network",
+          "gcp/password",
+          "gcp/pubsub",
+          "gcp/router",
+          "gcp/run",
+          "gcp/scheduler",
+          "gcp/secret_manager",
+          "gcp/service_account",
+          "gcp/sql",
+          "gcp/ssl_policy",
+          "gcp/workflows"
+        ]
     steps:
-      - uses: googleapis/release-please-action@v4
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run release-please
+        uses: googleapis/release-please-action@v4
         with:
           release-type: terraform-module
+          package-name: ${{ matrix.module-dir }}
+          path: ${{ matrix.module-dir }}

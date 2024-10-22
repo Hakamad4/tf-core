@@ -9,7 +9,7 @@ exemplo:
 
 ```hcl
 module "cloud-armor-default-policy" {
-  source = "github.com/rm-farma/terraform-modules//gcp/cloud_armor?ref=v0.0.1"
+  source = "github.com/Hakamad4/tf-core//gcp/{{module_name}}?ref=v0.0.1"
   # Configurações personalizadas (opcional)
 }
 ```

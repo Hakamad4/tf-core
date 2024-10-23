@@ -242,3 +242,4 @@ resource "google_bigquery_routine" "routine" {
 
   return_type = each.value["return_type"]
 }
+

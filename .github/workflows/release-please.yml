@@ -11,21 +11,7 @@ name: release-please
 jobs:
   release-please:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        module-dir: [
-          "gcp/address",
-          "gcp/api_key",
-          "gcp/artifact_registry",
-          "gcp/bigquery"
-        ]
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Run release-please
-        uses: googleapis/release-please-action@v4
+      - uses: googleapis/release-please-action@v4
         with:
           release-type: terraform-module
-          package-name: ${{ matrix.module-dir }}
-          path: ${{ matrix.module-dir }}

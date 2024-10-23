@@ -17,15 +17,7 @@ jobs:
           "gcp/address",
           "gcp/api_key",
           "gcp/artifact_registry",
-          "gcp/bigquery",
-          "gcp/cloud_armor",
-          "gcp/cloud_build",
-          "gcp/composer",
-          "gcp/dns",
-          "gcp/eventarc",
-          "gcp/factory",
-          "gcp/folder",
-          "gcp/functions"
+          "gcp/bigquery"
         ]
     steps:
       - name: Checkout code

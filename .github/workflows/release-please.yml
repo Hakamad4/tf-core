@@ -25,23 +25,7 @@ jobs:
           "gcp/eventarc",
           "gcp/factory",
           "gcp/folder",
-          "gcp/functions",
-          "gcp/gcs",
-          "gcp/gke",
-          "gcp/kms",
-          "gcp/lb_http",
-          "gcp/nat",
-          "gcp/network",
-          "gcp/password",
-          "gcp/pubsub",
-          "gcp/router",
-          "gcp/run",
-          "gcp/scheduler",
-          "gcp/secret_manager",
-          "gcp/service_account",
-          "gcp/sql",
-          "gcp/ssl_policy",
-          "gcp/workflows"
+          "gcp/functions"
         ]
     steps:
       - name: Checkout code

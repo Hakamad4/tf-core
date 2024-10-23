@@ -62,3 +62,5 @@ resource "google_cloudbuild_trigger" "this" {
 
   depends_on = [google_project_service_identity.identity]
 }
+
+# resource "dummy" "dummy" {}

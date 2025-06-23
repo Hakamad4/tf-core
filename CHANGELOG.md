@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/Hakamad4/tf-core/compare/v0.1.0...v0.2.0) (2025-06-23)
+
+
+### Features
+
+* **cloudsql:** update lifecycle ignore_changes for maintenance_version and settings version ([60ccbcd](https://github.com/Hakamad4/tf-core/commit/60ccbcdf2182857b6219bf5b7dc6bec8043920d0))
+
 ## 0.1.0 (2024-10-23)
 
 
